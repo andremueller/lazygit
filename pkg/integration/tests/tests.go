@@ -18,6 +18,7 @@ import (
 	"github.com/jesseduffield/lazygit/pkg/integration/tests/custom_commands"
 	"github.com/jesseduffield/lazygit/pkg/integration/tests/file"
 	"github.com/jesseduffield/lazygit/pkg/integration/tests/interactive_rebase"
+	"github.com/jesseduffield/lazygit/pkg/integration/tests/patch_panel"
 	"github.com/jesseduffield/lazygit/pkg/integration/tests/stash"
 )
 
@@ -47,6 +48,7 @@ var tests = []*components.IntegrationTest{
 	stash.Stash,
 	stash.StashIncludingUntrackedFiles,
 	config.RemoteNamedStar,
+	patch_panel.ExtractPatch,
 }
 
 func GetTests() []*components.IntegrationTest {
